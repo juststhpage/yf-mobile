@@ -1,0 +1,40 @@
+html,body {font-family:Arial,"microsoft yahei","宋体"; font-size: 16px;margin: 0px;padding: 0px;color:#5e5e5e; }
+div, ul, li, h1, h2, h3, h4, h5, h6, img, p, dl, dt, dd, ol, th, td {margin: 0px;padding: 0px;}
+li {list-style-type: none;}
+p {color: #717982;font-size: 12px;line-height: 18px;}
+h1, h2, h3, h4, h5, h6 {color: #062033;}
+form, input, button, option, textarea, select {margin: 0px;padding: 0px;color:#000; }
+textarea{resize:none;}
+input{ outline:none;border: none;}
+input, button, textarea, select {font:100% "微软雅黑","华文细黑",STHeiti-Light,STHeiti,"宋体";}
+a {text-decoration: none; cursor:pointer;color:#a6a6a6; }
+a:link {text-decoration: none;}
+a:visited {text-decoration: none;}
+a:hover {text-decoration: none;  }
+a:active {text-decoration: none;}
+table {font-size:inherit;}
+th {font-weight:normal;}
+img {border: 0;}
+h3 {font-size: 16px;}
+h4 {font-size: 16px;}
+h5 {font-size: 14px;}
+em{ font-style:normal;}
+.clear {clear: both;height: 0px;overflow: hidden;}
+button,
+select{outline: none;}
+button{cursor: pointer;}
+textarea{outline: none;border: 1px solid #d2d2d2;}
+/*清除浮动*/
+.clearfix:after{content:"";display:block;height:0;font-size:0;clear:both;visibility:hidden; }
+.clearfix{display:inline-table;}/* Hides from IE-mac \*/
+.clearfix{display:block;}/* End hide from IE-mac */
+.center {
+  width: 260px;
+  margin: 0 auto;
+}
+
+/* 动画测试 */
+* {
+  /* transition: all .5s; */
+}
+
