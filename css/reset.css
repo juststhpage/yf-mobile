@@ -23,7 +23,7 @@ em{ font-style:normal;}
 button,
 select{outline: none;}
 button{cursor: pointer;}
-textarea{outline: none;border: 1px solid #d2d2d2;}
+textarea{outline: none;border: none;}
 /*清除浮动*/
 .clearfix:after{content:"";display:block;height:0;font-size:0;clear:both;visibility:hidden; }
 .clearfix{display:inline-table;}/* Hides from IE-mac \*/
@@ -38,3 +38,113 @@ textarea{outline: none;border: 1px solid #d2d2d2;}
   /* transition: all .5s; */
 }
 
+.header {
+  position: relative;
+
+  .banner-bg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .nav {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1001;
+    width: 100%;
+
+    .logo {
+      float: left;
+      width: 100px;
+      margin: 20px;
+    }
+
+    .navbar-btn {
+      float: right;
+      width: 20px;
+      height: 20px;
+      margin: 22px 18px;
+      background: url(../img/home/caidan.png) no-repeat;
+      background-size: 100%;
+    }
+
+  }
+
+  .navbar {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 999;
+    background: rgba(0, 0, 0, .9);
+    padding-top: 76px;
+
+    &.active {
+      display: block;
+    }
+
+    &>a {
+      display: block;
+      width: 87%;
+      height: 50px;
+      line-height: 50px;
+      margin: 0 auto;
+      background: url(../img/icon-item.png) no-repeat;
+      background-position: 35% center;
+      background-size: 8px;
+      border-bottom: 1px solid #3e3e3e;
+      font-size: 14px;
+      color: #f8f8f8;
+      text-align: center;
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+
+  .header-content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 34%;
+    bottom: 0;    
+    text-align: center;
+
+    .title {
+      display: block;
+      margin: 0 auto;
+      width: 60%;
+      padding-bottom: 9.3%;
+      border-bottom: 1px solid #565f5c;
+    }
+
+    a {
+      display: block;
+      width: 36%;
+      height: 32px;
+      line-height: 32px;
+      margin: auto;
+      color: #fff;
+    }
+    
+    .btn-contact:active,
+    .btn-product {
+      background: #f92d61;
+      border: 1px solid #f92d61;
+    }
+
+    .btn-product {
+      margin-top: 70px;
+      margin-bottom: 32px; 
+    }
+    
+    .btn-contact {
+      background: transparent;;
+      border: 1px solid #fff;
+    }
+  }
+}

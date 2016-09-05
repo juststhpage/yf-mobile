@@ -1,0 +1,67 @@
+.company-profile .profile-wrap {
+  position: relative;
+  background: url(../img/about/6.png) no-repeat;
+  background-size: cover;
+}
+.company-profile .profile-wrap .profile {
+  padding: 0 15px 22px;
+}
+.company-profile .profile-wrap .profile > p {
+  color: #d7d8d8;
+  padding: 22px 0 16px 5px;
+}
+.company-profile .profile-wrap .profile .profile-item {
+  overflow: hidden;
+}
+.company-profile .profile-wrap .profile .profile-item span {
+  float: left;
+  width: 82px;
+  font-size: 12px;
+  color: #d7d8d8;
+}
+.company-profile .profile-wrap .profile .profile-item p {
+  color: #d7d8d8;
+  overflow: hidden;
+}
+.company-super .super-wrap {
+  padding: 15px 15px 10% 0;
+}
+.company-super .super-wrap .super-item {
+  overflow: hidden;
+  padding-top: 5px;
+  margin-bottom: 30px;
+}
+.company-super .super-wrap .super-item img {
+  width: 23.4%;
+  height: 23.4%;
+  float: left;
+  margin: 0 15px;
+  border-radius: 50%;
+  box-shadow: 0 3px 8px 2px #c5c5c5;
+}
+.company-super .super-wrap .super-item > div {
+  overflow: hidden;
+}
+.company-super .super-wrap .super-title {
+  font-weight: normal;
+  font-size: 16px;
+  color: #000;
+  line-height: 16px;
+  margin-bottom: 8px;
+}
+.company-super .super-wrap .super-content {
+  color: #787878;
+  line-height: 22px;
+}
+.about-title {
+  margin: 17px 20px;
+  border-left: 2px solid #f92d61;
+  color: #000;
+  font-size: 14px;
+  line-height: 14px;
+  padding-left: 5px;
+  word-break: break-all;
+}
+.about-title span {
+  color: #a3a3a3;
+}

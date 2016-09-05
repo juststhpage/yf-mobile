@@ -1,0 +1,138 @@
+.yf-content {
+  width: 80%;
+  background: rgba(255, 255, 255, 0.7);
+  padding-bottom: 20px;
+}
+.yf-content h4 {
+  position: relative;
+  font-size: 16px;
+  color: #000;
+  font-weight: normal;
+  padding: 15px 20px;
+  text-indent: 13px;
+}
+.yf-content h4:before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  margin-top: -2px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #f92d61;
+}
+.yf-content p {
+  color: #737373;
+  padding: 0 20px;
+  line-height: 22px;
+}
+.guagou {
+  position: relative;
+}
+.guagou:before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border: 2px solid #f92d61;
+  background: #fff;
+  border-radius: 50%;
+  z-index: 110;
+}
+.guagou:after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 77px;
+  background: #e8e8ea;
+  z-index: 110;
+}
+.yf-duty {
+  padding-top: 36%;
+  background: url(../img/socialDuty/1.png) no-repeat left top;
+  background-size: 67%;
+}
+.yf-duty .duty-main {
+  float: right;
+  box-shadow: 0 8px 10px -7px #999;
+}
+.yf-duty .duty-main:before {
+  right: 20px;
+  bottom: 12px;
+}
+.yf-duty .duty-main:after {
+  right: 23px;
+  bottom: -70px;
+}
+.yf-cultrue {
+  margin-top: 30px;
+  padding-bottom: 65px;
+}
+.yf-cultrue .cultrue-main {
+  float: right;
+}
+.yf-cultrue .guagou {
+  clear: both;
+}
+.yf-cultrue .guagou:before {
+  left: 14%;
+  top: -12px;
+}
+.yf-cultrue .guagou:after {
+  left: 14%;
+  top: 0;
+  margin-left: 3px;
+}
+.yf-cultrue img {
+  width: 80%;
+  float: right;
+}
+.yf-help-society {
+  background: url(../img/socialDuty/gradient-bg.png) repeat-y;
+  background-size: 100%;
+  text-align: center;
+  padding: 8% 20px 10%;
+}
+.yf-help-society:before {
+  left: 70%;
+  bottom: -50px;
+}
+.yf-help-society:after {
+  left: 70%;
+  bottom: -132px;
+  margin-left: 3px;
+}
+.yf-help-society h5 {
+  color: #fff;
+  font-weight: normal;
+  line-height: 45px;
+}
+.yf-help-society p {
+  color: #d9d9d9;
+  line-height: 22px;
+}
+.yf-charity img:first-of-type {
+  width: 45%;
+  height: 45%;
+  margin: -16px 0 0 8px;
+}
+.yf-charity img:last-of-type {
+  width: 64.4%;
+  height: 52.3%;
+  float: right;
+  margin-bottom: 16.9%;
+}
+.yf-charity .charity-main {
+  float: right;
+  width: 100%;
+  text-align: right;
+  margin-bottom: 20px;
+}
+.yf-charity .charity-main h4 {
+  padding-right: 33px;
+}
+.yf-charity .charity-main h4:before {
+  left: inherit;
+  right: 20px;
+}
