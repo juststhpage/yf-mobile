@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>怡丰-关于我们</title>
+  <title>怡丰-下载中心</title>
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/common.css">
@@ -17,13 +17,13 @@
       <a class="navbar-btn" href="javascript:void(0);"></a>
     </div>
     <div class="navbar">
-      <a href="">怡丰首页</a>
-      <a href="">产品中心</a>
-      <a href="">案例中心</a>
-      <a href="">新闻中心</a>
-      <a href="">下载中心</a>
-      <a href="">关于我们</a>
-      <a href="">招贤纳士</a>
+      <a href="./index.html">怡丰首页</a>
+      <a href="./productCenter.html">产品中心</a>
+      <a href="./example.html">案例中心</a>
+      <a href="./newsCenter.html">新闻中心</a>
+      <a href="./download.html">下载中心</a>
+      <a href="./about.html">关于我们</a>
+      <a href="./employ.html">招贤纳士</a>
     </div>
     <div class="header-common">
       <div class="header-main">
@@ -38,29 +38,39 @@
     <div class="doc-scroll">
       <ul id="doc-list" class="doc-list">
         <li class="doc-item">
-          <img src="./img/download/123.png" alt="">
-          <h6 class="doc-title">产品手册名称</h6>
-          <p>LeadDesigner</p>
+          <a href="">
+            <img src="./img/download/123.png" alt="">
+            <h6 class="doc-title">产品手册名称</h6>
+            <p>LeadDesigner</p>
+          </a>
         </li>
         <li class="doc-item">
-          <img src="./img/download/1234.png" alt="">
-          <h6 class="doc-title">产品手册名称</h6>
-          <p>LeadDesigner</p>
+          <a href="">
+            <img src="./img/download/1234.png" alt="">
+            <h6 class="doc-title">产品手册名称</h6>
+            <p>LeadDesigner</p>
+          </a>
         </li>
         <li class="doc-item">
-          <img src="./img/download/123.png" alt="">
-          <h6 class="doc-title">产品手册名称</h6>
-          <p>LeadDesigner</p>
+          <a href="">
+            <img src="./img/download/123.png" alt="">
+            <h6 class="doc-title">产品手册名称</h6>
+            <p>LeadDesigner</p>
+          </a>
         </li>
         <li class="doc-item">
-          <img src="./img/download/123.png" alt="">
-          <h6 class="doc-title">产品手册名称</h6>
-          <p>LeadDesigner</p>
+          <a href="">
+            <img src="./img/download/123.png" alt="">
+            <h6 class="doc-title">产品手册名称</h6>
+            <p>LeadDesigner</p>
+          </a>
         </li>
         <li class="doc-item">
-          <img src="./img/download/123.png" alt="">
-          <h6 class="doc-title">产品手册名称</h6>
-          <p>LeadDesigner</p>
+          <a href="">
+            <img src="./img/download/123.png" alt="">
+            <h6 class="doc-title">产品手册名称</h6>
+            <p>LeadDesigner</p>
+          </a>
         </li>
       </ul>
     </div>
@@ -70,14 +80,22 @@
     <ul class="video-list">
       <li class="video-item">
         <div class="thumb">
-          <img src="./img/download/01.png">
+          <video preload controls poster="./img/download/01.png">
+             <source src="movie.mp4" type="video/mp4">
+             <source src="movie.ogg" type="video/ogg">
+             您的浏览器不能使用最新的视频播放方式呢
+          </video>
           <a class="play-btn" href="javascript:void(0);"></a>
         </div>
         <p>机器人视频介绍</p>
       </li>
       <li class="video-item">
         <div class="thumb">
-          <img src="./img/download/01.png">
+          <video preload controls poster="./img/download/01.png">
+             <source src="movie.mp4" type="video/mp4">
+             <source src="movie.ogg" type="video/ogg">
+             您的浏览器不能使用最新的视频播放方式呢
+          </video>
           <a class="play-btn" href="javascript:void(0);"></a>
         </div>
         <p>机器人视频介绍</p>
@@ -106,6 +124,19 @@
       $('.navbar').fadeToggle()
     })
     $('#doc-list').width($('#doc-list li').length*($('#doc-list li').eq(0).width() + 13)+33);
+
+    // 视频播放
+    $('.play-btn').on('click', function () {
+      var v = $(this).siblings('video').get(0);
+      $(this).fadeOut();;
+      v.play();
+    })
+
+    $('video').on('pause', function () {
+      $(this).siblings('a').fadeIn();
+    })
+
+
   </script>
 </body>
 </html>

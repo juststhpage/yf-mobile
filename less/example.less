@@ -1,3 +1,13 @@
+.header .slider {
+  width: 100%;
+  height:180px;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
 .example-item {
   padding: 9px 9px 40px;
 
@@ -89,6 +99,10 @@
   width: 100%;
   display: block;
   margin-top: 4px;
+
+  img {
+    width: 100%;
+  }
 }
 
 .btn-group {
@@ -121,4 +135,36 @@
     background: url(../img/example/5.png) no-repeat 0 3px;
     background-size: 100%;
   }
+}
+
+.swiper-pagination {
+  text-align: right;
+  z-index: 200;
+
+  .swiper-pagination-bullet {
+    width: 5px;
+    height: 5px;
+    position: relative;
+    z-index: 200;
+    background: #fff;
+    opacity: 1;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: #f92d61;
+  }
+}
+
+.swiper-container {
+  z-index: inherit;
+}
+
+.swiper-container-horizontal>.swiper-pagination .swiper-pagination-bullet {
+  margin: 0 2px;
+}
+
+.swiper-container-horizontal>.swiper-pagination {
+  left: inherit;
+  right: 19px;
+  bottom: 15px;
 }

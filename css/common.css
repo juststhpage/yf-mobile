@@ -244,10 +244,11 @@
 }
 .header-special {
   position: absolute;
-  left: 27px;
+  left: 0;
   top: 55px;
   right: 0;
   bottom: 0;
+  padding: 0 27px;
 }
 .header-special h2 {
   border-bottom: 2px solid #f92d61;

@@ -6,13 +6,14 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/common.css">
+  <link rel="stylesheet" type="text/css" href="./css/lib/swiper.min.css">
   <link rel="stylesheet" type="text/css" href="css/product.css">
 </head>
 <body>
   <!-- header -->
   <div class="header">
     <div class="header-product">
-      <a class="btn-back absolut">返回</a>
+      <a href="./productCenter.html" class="btn-back absolut">返回</a>
       <h2 class="clearfix">梳齿型停车AGV（GETA CAR-type C）</h2>
       <p>梳齿型停车AGV 可全方位运动</p>
       <p>前后 左右 转弯 差速 自旋</p>
@@ -58,8 +59,18 @@
   </div>
   <div class="more-product">
     <p>更多产品推荐</p>
-    <div class="">
-      
+    <div class="swiper-container slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./img/product/slider-bg.png" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/product/slider-bg.png" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/product/slider-bg.png" alt="" />
+        </div>
+      </div>
     </div>
   </div>
   <!-- footer -->
@@ -79,10 +90,15 @@
   </div>
   
   <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+  <script type="text/javascript" src="js/swiper3.1.0.jquery.min.js"></script>
   <script type="text/javascript">
-    $('.navbar-btn').on('click', function (e) {
-      $('.navbar').fadeToggle()
-    })
+    var mySwiper = new Swiper('.swiper-container',{
+      loop: true,
+      grabCursor: true,
+      paginationClickable: true,
+      effect : 'slide',
+      speed: 300
+    });
   </script>
 </body>
 </html>

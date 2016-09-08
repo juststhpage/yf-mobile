@@ -60,13 +60,15 @@
 }
 .video-list .thumb {
   position: relative;
-  width: 273px;
-  height: 162px;
+  width: 85%;
+  height: 50.6%;
   margin: 0 auto;
   overflow: hidden;
 }
+.video-list .thumb video,
 .video-list .thumb img {
   width: 100%;
+  height: 100%;
 }
 .video-list .thumb .play-btn {
   position: absolute;
@@ -74,14 +76,9 @@
   right: 0;
   top: 0;
   bottom: 0;
+  z-index: 10l;
   background: url(../img/download/play.png) no-repeat center center;
   background-size: 78px;
-  -webkit-transition: all .5s;
-  transition: all .5s;
-}
-.video-list .thumb .play-btn:active,
-.video-list .thumb .play-btn.play {
-  animation: play 1s;
 }
 .video-list p {
   height: 40px;
