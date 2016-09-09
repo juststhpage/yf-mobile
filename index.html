@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/common.css">
+  <link rel="stylesheet" type="text/css" href="./css/lib/swiper.min.css">
   <link rel="stylesheet" type="text/css" href="css/home.css">
 </head>
 <body>
@@ -65,11 +66,50 @@
         <a href="">其他AGV</a>
       </div>
     </div>
+    <div class="swiper-container home-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide swiper-item">
+          <img src="./img/home/home-slider.png" alt="" />
+          <div class="item-container">
+            <h4 class="item-title">成功案例</h4>
+            <div class="item-inner">
+              <h5 class="inner-title">南京夫子庙地铁</h5>
+              <p class="inner-text">南京夫子庙地铁P+R停车库项目处于南京夫子庙商业繁华地段，紧邻健康路与平江府路丁子路口，周围有地铁出入口和公交巴士站，人、车流量非常大，只有采用技术成熟、可靠、安全、稳定的设备，才能有效的降低全自动车库进、出车辆对周边道路的交通影响，同时要考虑尽可能地增加车位数量，并提高存取车效率。</p>
+              <a href="./exampleDetail.html" class="btn-detail">查看详情</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide swiper-item">
+          <img src="./img/home/home-slider.png" alt="" />
+          <div class="item-container">
+            <h4 class="item-title">成功案例</h4>
+            <div class="item-inner">
+              <h5 class="inner-title">南京夫子庙地铁</h5>
+              <p class="inner-text">南京夫子庙地铁P+R停车库项目处于南京夫子庙商业繁华地段，紧邻健康路与平江府路丁子路口，周围有地铁出入口和公交巴士站，人、车流量非常大，只有采用技术成熟、可靠、安全、稳定的设备，才能有效的降低全自动车库进、出车辆对周边道路的交通影响，同时要考虑尽可能地增加车位数量，并提高存取车效率。</p>
+              <a href="./exampleDetail.html" class="btn-detail">查看详情</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide swiper-item">
+          <img src="./img/home/home-slider.png" alt="" />
+          <div class="item-container">
+            <h4 class="item-title">成功案例</h4>
+            <div class="item-inner">
+              <h5 class="inner-title">南京夫子庙地铁</h5>
+              <p class="inner-text">南京夫子庙地铁P+R停车库项目处于南京夫子庙商业繁华地段，紧邻健康路与平江府路丁子路口，周围有地铁出入口和公交巴士站，人、车流量非常大，只有采用技术成熟、可靠、安全、稳定的设备，才能有效的降低全自动车库进、出车辆对周边道路的交通影响，同时要考虑尽可能地增加车位数量，并提高存取车效率。</p>
+              <a href="./exampleDetail.html" class="btn-detail">查看详情</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"> 
+      </div>
+    </div>
     <!-- 公司动态 -->
     <div class="section-news">
       <img src="img/home/news-bg.png">
       <div class="news-wrap">
-        <h4 class="advant-title">公司动态</h4>
+        <h4 class="advant-title item-title">公司动态</h4>
         <ul class="news-list center">
           <li>
             <a href="">
@@ -130,13 +170,22 @@
           Copyright 2016 深圳怡丰机器人科技有限公司
         </div>
     </div>
-  </div>
 
   <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+  <script type="text/javascript" src="./js/swiper3.1.0.jquery.min.js"></script>
   <script type="text/javascript">
     $('.navbar-btn').on('click', function () {
       $('.navbar').fadeToggle()
     })
+
+     var mySwiper = new Swiper('.swiper-container',{
+      loop: true,
+      grabCursor: false,
+      paginationClickable: false,
+      effect : 'slide',
+      speed: 300,
+      pagination: '.swiper-pagination'
+    });
   </script>
 </body>
 </html>

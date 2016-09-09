@@ -189,18 +189,22 @@
 
       <div class="more-product">
         <p>更多产品推荐</p>
-        <div class="swiper-container slider">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="./img/product/slider-bg.png" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./img/product/slider-bg.png" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./img/product/slider-bg.png" alt="" />
+        <div class="more-wrap">
+          <div class="swiper-container slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./img/product/slider-bg.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/product/slider-bg.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/product/slider-bg.png" alt="" />
+              </div>
             </div>
           </div>
+          <div class="swiper-button-prev swiper-button-gray"></div>
+          <div class="swiper-button-next swiper-button-gray"></div>
         </div>
       </div>
     </div>
@@ -226,10 +230,12 @@
   <script type="text/javascript">
     var mySwiper = new Swiper('.swiper-container',{
       loop: true,
-      grabCursor: true,
-      paginationClickable: true,
+      grabCursor: false,
+      paginationClickable: false,
       effect : 'slide',
-      speed: 300
+      speed: 300,
+      prevButton:'.swiper-button-prev',
+      nextButton:'.swiper-button-next'
     });
   </script>
 </body> 
